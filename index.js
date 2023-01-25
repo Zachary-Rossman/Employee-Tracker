@@ -8,9 +8,9 @@ const db = mysql.createConnection(
         user: 'root',
         //MySQL password
         password: 'root',
-        database: 'classlist_db'
+        database: 'tracker'
     },
-    console.log('Connected to the classlist_db database.')
+    console.log('Connected to the tracker database')
 );
 
 // Query database
