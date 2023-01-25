@@ -18,7 +18,17 @@ function viewDepartments(){
     db.query("SELECT * FROM department", function (err, results) {
         console.table(results);
     })
-}
+};
+function viewEmployees(){
+    db.query("SELECT * FROM employee", function (err, results) {
+        console.table(results);
+    })
+};
+function viewRoles(){
+    db.query("SELECT * FROM role", function (err, results) {
+        console.table(results);
+    })
+};
 
 inquirer
   .prompt([
@@ -36,5 +46,11 @@ inquirer
 .then((response) => {
     if (response.choice === "VIEW DEPARTMENTS") {
         viewDepartments();
+    }
+    if (response.choice === "VIEW EMPLOYEES") {
+        viewEmployees();
+    }
+    if (response.choice === "VIEW ROLES") {
+        viewRoles();
     }
 });
