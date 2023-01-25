@@ -19,6 +19,6 @@
   "homepage": "https://github.com/Zachary-Rossman/Employee-Tracker#readme",
   "dependencies": {
     "inquirer": "^8.2.4",
-    "mysql2": "^3.0.1"
+    "mysql2": "^2.1.0"
   }
 }
