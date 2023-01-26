@@ -107,7 +107,11 @@ inquirer
             {
                 type: "insert",
                 message: "What is the new role called?",
-            }
+            },
+            {
+                type: "number",
+                message: "What is the salary for this role?"
+            },
         ])
         .then((response) => {
             addRole();
