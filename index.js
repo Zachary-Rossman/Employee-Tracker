@@ -90,12 +90,44 @@ inquirer
         viewEmployees();
     }
     if (response.choice === "ADD DEPARTMENT") {
-        addDepartment();
+        inquirer
+        .prompt([
+            {
+                type: "insert",
+                message: "What is the new Department's name?",
+            }
+        ])
+        .then((response) => {
+            addDepartment();
+        })
     }
     if (response.choice === "ADD ROLE") {
-        addRole();
+        inquirer
+        .prompt([
+            {
+                type: "insert",
+                message: "What is the new role called?",
+            }
+        ])
+        .then((response) => {
+            addRole();
+        })
     }
     if (response.choice === "ADD EMPLOYEE") {
-        addEmployee();
+        inquirer
+        .prompt([
+            {
+                type: "insert",
+                message: "Insert employee's first name",
+            },
+            {
+                type: "insert",
+                message: "Insert employee's last name",
+            },
+            {},
+        ])
+        .then((response) => {
+            addEmployee();
+        })
     }
-  })
+  });
