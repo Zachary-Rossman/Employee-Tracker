@@ -29,3 +29,6 @@ Zachary-Rossman
 
 ## Dependencies
 To see all dependencies, please refer to package.json in the root folder.
+
+## Extra Notes
+*THIS README HAS BEEN WRITTEN ON 1/26/2023, AND UPON UPDATE OF MY WINDOWS COMPUTER, INQUIRER HAS STOPPED FUNCTIONING ON ALL OF MY APPS. I AM AWARE OF THE BUG, AND AM RESEARCHING IT *
